@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  address: 127.0.0.1
+  session:
+    timeout: 30
+  context-path: /
+
+  tomcat:
+    accesslog:
+      enabled: true
+    protocol-header: x-forwarded-proto
+    remote-ip-header: x-forwarded-for
+    basedir:
+    background-processor-delay: 30
+    uri-encoding: UTF-8
+spring:
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+  dubbo:
+    application.name: springboot-template
+    application.owner: zhoudapeng
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  profiles:
+    active: beta
+
+
+
+
+
+
+
+
+
+
+
